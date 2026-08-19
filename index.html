@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff5f87" />
+    <title>Pour Lilou ♡</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="spotify.css" />
+  </head>
+  <body>
+    <div class="grain"></div><div class="orb orb-a"></div><div class="orb orb-b"></div>
+    <div class="sound-intro" id="sound-intro" role="button" tabindex="0" aria-label="Lancer la musique">
+      <span class="sound-note">♫</span>
+      <p>Avant de commencer…</p>
+      <strong>Clique sur la musique<br>avant de continuer</strong>
+      <small>Pineapple — Leto</small>
+    </div>
+    <main class="browser">
+      <header class="safari"><span class="traffic"><i></i><i></i><i></i></span><div class="address"><span>🔒</span><span>un-petit-message-pour-lilou.com</span></div><span class="share">⌑</span></header>
+      <section class="page active" id="question">
+        <p class="eyebrow">MESSAGE PRIORITAIRE · POUR LILOU</p>
+        <div class="polaroid"><img src="assets/nous.png" alt="Nous deux dans la piscine" /><span>nous &amp; les bons moments ♡</span></div>
+        <p class="mini">Lilou, j’ai une question très sérieuse…</p>
+        <h1>Tu veux faire un <em>date</em><br>avec moi ce weekend ?</h1>
+        <p class="sub">Promis, il y aura des bisous, des fous rires<br>et une soirée rien qu’à nous.</p>
+        <div class="answers"><button class="yes" id="yes">OUI, ÉVIDEMMENT ♡</button><button class="no" id="no">non</button></div>
+        <p class="hint">psst… le « non » est un peu timide</p>
+      </section>
+      <section class="page" id="choice">
+        <p class="eyebrow">MISSION ACCEPTÉE ✓</p>
+        <div class="sparkles">✦ ✧ ✦</div>
+        <h1>Alors Lilou…<br><em>on s’évade</em> où ?</h1>
+        <p class="sub">Choisis ton mood préféré, je m’occupe du reste.</p>
+        <div class="date-cards">
+          <button class="date-card city" data-choice="Une virée en ville : ciné, bon resto et toi à mon bras."><span class="card-top">OPTION 01</span><div class="card-pic"></div><span class="card-emoji">🎬 &nbsp; 🍝</span><strong>Date en ville</strong><small>Ciné + dîner + balade</small></button>
+          <button class="date-card home" data-choice="Une soirée à la maison : plaid, Netflix et McDo — surprise incluse."><span class="card-top">OPTION 02</span><div class="card-pic"></div><span class="card-emoji">🍿 &nbsp; 🛋️ &nbsp; 🍟</span><strong>Date à la maison</strong><small>Surprise + Netflix + McDo</small></button>
+        </div>
+      </section>
+      <section class="page" id="note">
+        <p class="eyebrow">DATE ENREGISTRÉ ✓</p>
+        <div class="heart">♥</div>
+        <h1>C’est noté, <em>Lilou.</em></h1>
+        <p class="chosen" id="chosen"></p>
+        <div class="note-box"><label for="message">Tu peux me laisser un petit mot si tu veux ♡</label><textarea id="message" maxlength="300" placeholder="J’ai trop hâte de…"></textarea><span id="count">0 / 300</span></div>
+        <button class="yes" id="send">ENVOYER MON PETIT MOT ✉</button>
+        <p class="final" id="final">J’ai trop hâte de passer ce moment avec toi. ♡</p>
+      </section>
+    </main>
+    <div class="spotify-player" aria-label="Pineapple — Leto">
+      <iframe id="spotify-embed" style="border-radius:12px" src="about:blank" data-src="https://open.spotify.com/embed/track/1jSRu1IRoB6DPKsWTVGzTB?utm_source=generator&autoplay=1" width="100%" height="152" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" title="Pineapple — Leto"></iframe>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
